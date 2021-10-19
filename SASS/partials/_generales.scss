@@ -1,0 +1,103 @@
+@import "./fuentes";
+
+p{ 
+    @include font-size(1.2rem, 1rem);
+}
+  
+h1{
+    @include font-size(2rem, 1.8rem)
+}
+
+h2 {
+    @include font-size(1.6rem, 1.2rem)
+}
+
+
+.hero{
+
+    background-image: url(../../assests/back-tecno.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+    &__box{
+    
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    
+   }
+
+   &__titulo{
+    @include font-size(2.5rem, 3rem);
+   }
+
+   &__msg{
+    @include font-size(1.5rem, 2rem);
+   }
+   
+}
+
+
+.slide{
+    align-items: center;
+       
+
+    &__contenido{
+        align-items: center;
+        align-content: center;
+        
+        
+    }
+}
+
+
+.serv{
+    &__article{
+        @include font-size(1.5rem, 2rem);
+        }
+
+    &__titulo{
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    
+
+    &__texto{
+        @include font-size(2rem, 1.4rem);
+
+    }
+}
+
+.serv__img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    &--MP{
+        width: auto;
+        height: 83px;
+    }
+}
+
+.navbar{
+    text-align: center;
+}
+
+.error{
+    height: 100%;
+    width: auto;
+    opacity: 0.6;
+    text-align: center;
+    
+    
+    
+    &__img{
+        background-image: url("../../assests/404Choca.jpg");
+        background-position: center;
+        background-size: cover;
+        
+        
+  
+        }
+}
