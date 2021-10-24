@@ -101,3 +101,34 @@ h2 {
   
         }
 }
+
+.tecno{
+    
+    
+    &__article{
+        @include font-size(1.5rem, 2rem);
+        }
+
+    &__titulo{
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    
+
+    &__texto{
+        @include font-size(2rem, 1.4rem);
+      color: white;
+      padding-top: 2rem;
+    }
+}
+
+.tecno__img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    &--MP{
+        width: auto;
+        height: 60px;
+    }
+}

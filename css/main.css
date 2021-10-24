@@ -196,6 +196,59 @@ h2 {
   background-size: cover;
 }
 
+.tecno__article {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tecno__article {
+    font-size: calc( 1.5rem +  num(2rem)-num(1.5rem) *  (100vw - 768px) /  num(1024px)-num(768px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .tecno__article {
+    font-size: 2rem;
+  }
+}
+
+.tecno__titulo {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.tecno__texto {
+  color: white;
+  padding-top: 2rem;
+}
+
+.tecno__texto {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tecno__texto {
+    font-size: calc( 2rem +  num(1.4rem)-num(2rem) *  (100vw - 768px) /  num(1024px)-num(768px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .tecno__texto {
+    font-size: 1.4rem;
+  }
+}
+
+.tecno__img {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.tecno__img--MP {
+  width: auto;
+  height: 60px;
+}
+
 .btn-sng1 {
   background-color: #2481A6;
   border: #2481A6;
