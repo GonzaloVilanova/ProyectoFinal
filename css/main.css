@@ -71,11 +71,6 @@ h2 {
   }
 }
 
-.hero {
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .hero__box {
   height: 30%;
   width: 100%;
@@ -246,6 +241,49 @@ h2 {
 .tecno__img--MP {
   width: auto;
   height: 60px;
+}
+
+.team__article {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team__article {
+    font-size: calc( 1.5rem +  num(2rem)-num(1.5rem) *  (100vw - 768px) /  num(1024px)-num(768px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .team__article {
+    font-size: 2rem;
+  }
+}
+
+.team__titulo {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.team__texto {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team__texto {
+    font-size: calc( 2rem +  num(1.4rem)-num(2rem) *  (100vw - 768px) /  num(1024px)-num(768px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .team__texto {
+    font-size: 1.4rem;
+  }
+}
+
+.team__img {
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
 .btn-sng1 {

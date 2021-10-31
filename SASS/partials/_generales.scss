@@ -14,11 +14,7 @@ h2 {
 
 
 .hero{
-
-    // background-image: url(../../assests/back-tecno.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    
+   
 
     &__box{
     
@@ -130,5 +126,29 @@ h2 {
     &--MP{
         width: auto;
         height: 60px;
+    }
+}
+
+.team{
+    &__article{
+        @include font-size(1.5rem, 2rem);
+        }
+
+    &__titulo{
+        padding-top: 1rem;
+        text-align: center;
+        
+    }
+    
+
+    &__texto{
+        @include font-size(2rem, 1.4rem);
+
+    }
+    &__img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        
     }
 }
